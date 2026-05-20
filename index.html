@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thang Huynh | Business Coach</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; color: #1a1a2e; background: #fff; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 24px 60px; border-bottom: 1px solid #e8e8e8; }
+    nav .logo { font-size: 1.2rem; font-weight: bold; letter-spacing: 1px; color: #1a1a2e; text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 36px; }
+    nav ul a { text-decoration: none; font-family: 'Arial', sans-serif; font-size: 0.9rem; color: #555; letter-spacing: 0.5px; transition: color 0.2s; }
+    nav ul a:hover { color: #1a1a2e; }
+    .hero { display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 100px 60px 80px; background: linear-gradient(135deg, #f8f9fc 0%, #eef1f8 100%); }
+    .hero .eyebrow { font-family: 'Arial', sans-serif; font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; color: #4a6fa5; margin-bottom: 20px; }
+    .hero h1 { font-size: 3rem; line-height: 1.2; color: #1a1a2e; max-width: 700px; margin-bottom: 24px; }
+    .hero p { font-size: 1.15rem; color: #555; max-width: 560px; line-height: 1.8; margin-bottom: 40px; font-family: 'Arial', sans-serif; }
+    .btn { display: inline-block; padding: 16px 40px; background: #1a1a2e; color: #fff; font-family: 'Arial', sans-serif; font-size: 0.9rem; letter-spacing: 1px; text-decoration: none; border-radius: 2px; transition: background 0.2s; }
+    .btn:hover { background: #4a6fa5; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding: 100px 60px; max-width: 1100px; margin: 0 auto; align-items: center; }
+    .about-text h2 { font-size: 2rem; margin-bottom: 20px; color: #1a1a2e; }
+    .about-text p { font-family: 'Arial', sans-serif; font-size: 1rem; color: #555; line-height: 1.9; margin-bottom: 16px; }
+    .about-visual { background: linear-gradient(135deg, #1a1a2e, #4a6fa5); border-radius: 4px; height: 360px; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem; }
+    .services { background: #f8f9fc; padding: 100px 60px; text-align: center; }
+    .services h2 { font-size: 2rem; margin-bottom: 12px; color: #1a1a2e; }
+    .services .subtitle { font-family: 'Arial', sans-serif; color: #777; margin-bottom: 60px; font-size: 1rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 1000px; margin: 0 auto; }
+    .service-card { background: #fff; padding: 40px 32px; border-radius: 4px; border: 1px solid #e8e8e8; text-align: left; transition: box-shadow 0.2s; }
+    .service-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+    .service-card .icon { font-size: 2rem; margin-bottom: 20px; }
+    .service-card h3 { font-size: 1.1rem; margin-bottom: 12px; color: #1a1a2e; }
+    .service-card p { font-family: 'Arial', sans-serif; font-size: 0.9rem; color: #777; line-height: 1.8; }
+    .cta { padding: 100px 60px; text-align: center; }
+    .cta h2 { font-size: 2.2rem; margin-bottom: 16px; color: #1a1a2e; }
+    .cta p { font-family: 'Arial', sans-serif; color: #777; margin-bottom: 40px; font-size: 1rem; }
+    footer { border-top: 1px solid #e8e8e8; padding: 32px 60px; display: flex; justify-content: space-between; align-items: center; font-family: 'Arial', sans-serif; font-size: 0.85rem; color: #aaa; }
+    @media (max-width: 768px) {
+      nav { padding: 20px 24px; } nav ul { gap: 20px; }
+      .hero { padding: 60px 24px; } .hero h1 { font-size: 2rem; }
+      .about { grid-template-columns: 1fr; padding: 60px 24px; gap: 40px; } .about-visual { height: 200px; }
+      .services { padding: 60px 24px; } .services-grid { grid-template-columns: 1fr; }
+      .cta { padding: 60px 24px; } footer { flex-direction: column; gap: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="logo" href="#">THANG HUYNH</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="hero">
+    <p class="eyebrow">Business Coach</p>
+    <h1>Build the Business You Actually Want</h1>
+    <p>I help entrepreneurs and business leaders cut through the noise, make smarter decisions, and grow with clarity and confidence.</p>
+    <a href="#contact" class="btn">Work With Me</a>
+  </section>
+  <section class="about" id="about">
+    <div class="about-visual">🧭</div>
+    <div class="about-text">
+      <h2>Hi, I'm Thang.</h2>
+      <p>I'm a business coach who works with founders, executives, and ambitious professionals who are ready to take their business to the next level.</p>
+      <p>My approach is direct, strategic, and results-driven. Together, we'll identify what's holding you back, build a clear roadmap, and put the right systems in place so your business works for you — not the other way around.</p>
+      <p>Whether you're just starting out or scaling an established company, I'll help you lead with purpose and grow with intention.</p>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h2>How I Can Help</h2>
+    <p class="subtitle">Coaching programs tailored to where you are and where you want to go.</p>
+    <div class="services-grid">
+      <div class="service-card"><div class="icon">🎯</div><h3>Strategy &amp; Clarity</h3><p>Cut through confusion and build a clear, actionable business strategy aligned with your goals and values.</p></div>
+      <div class="service-card"><div class="icon">📈</div><h3>Growth &amp; Scaling</h3><p>Identify your biggest growth levers and build the systems, team, and processes to scale sustainably.</p></div>
+      <div class="service-card"><div class="icon">🧠</div><h3>Leadership Development</h3><p>Sharpen your leadership skills, improve decision-making, and build a high-performing team culture.</p></div>
+    </div>
+  </section>
+  <section class="cta" id="contact">
+    <h2>Ready to Get Started?</h2>
+    <p>Book a free 30-minute discovery call and let's talk about your business.</p>
+    <a href="mailto:thang@example.com" class="btn">Book a Discovery Call</a>
+  </section>
+  <footer>
+    <span>© 2026 Thang Huynh. All rights reserved.</span>
+    <span>Business Coach</span>
+  </footer>
+</body>
+</html>
